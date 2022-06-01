@@ -1,0 +1,116 @@
+/* //global */
+*{
+    box-sizing: border-box;
+}
+/* html{
+    background-color: rgb(3, 254, 254);
+} */
+a{
+    color: rgb(5, 5, 0);
+    font-weight: bolder;
+    text-decoration: none;
+}
+h1{
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: underline;
+    /* border: 2.5px solid yellow; */
+}
+h2{
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: underline;
+}
+p{
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    /* border: 2.5px solid yellow; */
+}
+/* html */
+.container{
+    /* background-color: rgb(3, 254, 254); */
+    color: black;
+    /* border: 2.5px solid yellow; */
+    margin: 20px;
+    padding: 20px;
+}
+.subforum{
+    margin-top: 20px;
+}
+.subforum-title{
+    background-color:rgb(227, 227, 227);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 4px;
+}
+.subforum-description *{
+    margin-block: 0;
+}
+.subforum-row{
+    display: grid;
+    grid-template-columns: 4.3% 62.5% 14% 19.1%;
+}
+.subforum-column{
+    padding: 10px;
+    margin: 4px;
+    border-radius: 5px;
+    background-color:rgba(178, 178, 60, 0.199) ;
+}
+a{
+    color:purple
+}
+a:active {
+        color: rgb(255, 132, 0);
+        /* background-color: rgb(3, 254, 254); */
+}
+.lineSpan{
+    color: rgb(128, 0, 0);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subforum-icon i{
+    font-size: 30px;
+}
+/* .subforum-info{
+    padding-top: 30px;
+} */
+
+/* Smartphones */
+@media screen and (max-width: 460px){
+    .container{
+        margin: 10px;
+        padding: 10px;
+    }
+.subforum-row{ 
+    display: grid;
+    grid-template-columns: 15% 75%;
+    grid-template-rows: 8.3% 19.1%;
+    }
+.subforum-stats{
+    padding:12px;
+    }
+}
+
+/* tablets */
+@media screen and (min-width: 460px) and (max-width) {
+    .container{
+        margin: 15px;
+        padding: 15px;
+    }
+    .subforum-row{
+        display:grid;
+        grid-template-columns: 10% 60% 10% 20%;
+    }
+    .subforum-icon i{
+        font-size: 35px;
+    }
+    html{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 18px;
+    }
+}
