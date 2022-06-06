@@ -5,8 +5,8 @@ const port     = process.env.PORT || 3555;
 
 const MongoClient = require('mongodb').MongoClient
 const mongoose = require('mongoose');
-mongoose.set('useNewUrlParser', true);
-mongoose.set('useUnifiedTopology', true);
+// mongoose.set('useNewUrlParser', true);
+// mongoose.set('useUnifiedTopology', true);
 
 
 
@@ -24,7 +24,8 @@ let db
 
 mongoose.connect(configDB.url, (err, database) => {
   if (err) return console.log(err)
-  db = database 
+  db = database
+  console.log(`mongodb:${db}`)
   require('./app/routes.js')(app, passport, db);
 }); 
 
