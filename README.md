@@ -1,6 +1,6 @@
 # Fullstack-App-with-User-Login
 
-A Fullstack Application with user authentication. This app has several features including a Darth Vader and Yoda quotes, with post, delete and update capabilities.
+A To-Do List Fullstack Application with user authentication. This app has several features including a to do list task manager with post, delete and update capabilities.
 
 ## How It's Made:
 
